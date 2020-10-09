@@ -6,7 +6,7 @@ def api(my_api):
     lat = input()
     print('Enter longtitude:')
     lon=input()
-    url = "https://api.openweathermap.org/data/2.5/onecall?lat={}&lon={}&units=metric&exclude=minutely,current,hourly,alerts&appid={}".format(l, lo, my_api)
+    url = "https://api.openweathermap.org/data/2.5/onecall?lat={}&lon={}&units=metric&exclude=minutely,current,hourly,alerts&appid={}".format(lat, lon, my_api)
     json_obj = urllib.request.urlopen(url)
     data = json.load(json_obj)
     x=0
